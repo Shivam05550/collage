@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive about us page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link real="stylesheet"type="text/css" href="style1.css">
+</head>
+<body>
+ <div class ="container">
+ <h1 class="title">About Us</h1> 
+ <div class="about-content">
+    <div class="img">
+ <img src="img/about.jpeg" width="350px" height="350px"></div>
+ <div class="content">
+    <p>Web scraping was created to make difficult jobs easier to complete, such as manually gathering enormous amounts of data
+        Web scraping is a technique used to extract data from websites. 
+       It involves retrieving information from web pages by sending HTTP requests to the web server,
+         parsing the HTML or other markup language of the web page, and then extracting the desired data.
+       This process is typically automated using scripts or programs.
+       Web scraping is like a virtual "data harvesting" technique where a computer 
+       program simulates the human action of browsing a website and collecting data from it.
+       Web scraping is widely used for various purposes such as data analysis, market research,
+       content aggregation, competitive intelligence, and more. 
+  </p>
+  <a href="https://en.wikipedia.org/wiki/Web_scraping" class="readmore">Read More</a>
+  <a href="home.html" class="readmore">Home</a>
+ </div>
+ </div>    
+</div>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width:80%;
+    margin:50px auto;
+    padding: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.about-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.img{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.img img{
+    width: 100%;
+    transition:transform 0.3s ease;
+}
+.img:hover img{
+    transform: scale(1.1);
+}
+.content{
+    flex:1;
+    margin-left: 20px;
+}
+.content p{
+    font-size: 17px;
+    line-height: 1.6;
+}
+.readmore{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s ease;
+} 
+.readmore:hover{
+    background-color: #ccbb25;
+}
+@media screen and (max-width:768px){
+    .about-content{
+        flex-direction: column;
+    }
+    .img, .content{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+}
+</style>
+<footer>  
+    <p>&copy; 2024 Our Company. All rights reserved.</p>
+</footer>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:black;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+.content {
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
